@@ -199,3 +199,12 @@ consider the following grammar
 	<< has precedence, it will be equivalent to 40-(3<<4) = 8.  Our output was 542, meaning
 	- has precidence over <<.
 	
+##2c) 
+	Flp::= S Di * De Di * Exp | S Di + De Di * Exp
+	S::= +|-
+	De::= .
+	Exp::= S|Di
+	Di::= Di N|M
+	N::= 0|1|2|3|4|5|6|7|8|9
+	M::= 1|2|3|4|5|6|7|8|9
+	
