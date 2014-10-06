@@ -1,35 +1,41 @@
-```
-
-1a)
-
-A::= A A|V
-
-V::= a|b
-
-A is in Aobjects
-
-V is in Vobjects
-
-                  _____________     _____________
-Axioms ->		  a in Aobjects     v in Vobjects
+##1a)
+                  
+### Axioms 	
 
 
-inference rule ->   x in Vobjects
+	
+\_____________________________
 
-				    -------------
-				    
-				    x in Aobjects
+a in Aobjects
+
+
+\_____________________________
+
+v in Vobjects
 
 
 
-inference of expression ->   x in Aobjects   y in Aobjects
 
-							 -----------------------------
-							 
-							       x & y in Aobjects
+### inference rule   
+
+x in Vobjects
+
+\---------------
+
+x in Aobjects
 
 
-1b)
+
+###inference of expression    
+
+x in Aobjects   y in Aobjects
+
+\-----------------------------
+
+x & y in Aobjects
+
+
+##1b)
 
 The grammar in the previous section is ambiguous because we can create a single string
 
@@ -45,7 +51,7 @@ multiple ways.  For example, the string baab can be created the following ways.
                  b    a   a b                   b a  a  b 
 
 
-1c)
+##1c)
 
 S produces either A, B, or C
 
@@ -56,7 +62,7 @@ B produces either b and B, or epsilon (terminal)
 C produces either c and C, or simply c
 
 
-1d)
+##1d)
 
 S::= AaBb
 
@@ -117,7 +123,7 @@ B::= aB|a
 
 
 
-1e)
+##1e)
 
 consider the following grammar
 
@@ -169,7 +175,7 @@ consider the following grammar
 
 
 
-2a)
+##2a)
 
 	Grammar option 1:  e::= operand|e operator operand
 	Grammar option 2:  e::= operand esuffix
@@ -187,10 +193,9 @@ consider the following grammar
        operator and operand, beginning and ending with operand.  
        
 
-2b)
+##2b)
 	The statement 40-3<<4 will determine precedence between the operations - and <<.  If -
 	has precedence over <<, this will be equivalent to the statement (40-3)<<4 = 592.  If 
 	<< has precedence, it will be equivalent to 40-(3<<4) = 8.  Our output was 542, meaning
 	- has precidence over <<.
 	
-```
